@@ -1,0 +1,119 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CV</title>
+  <style>
+		section {
+			text-align : left;
+			padding : 0 2% 1% 2%;
+			font-size : 22px;
+		}
+		h1 {
+			color : blue;
+		}
+		blockquote {
+			background-color : lightgrey;
+			width : 98%;
+			margin-left : 2%;
+			padding-left : 1%;
+		}
+		.article-cv {
+			margin : auto;
+			width : 90%;
+			background-color : lightyellow;
+		}
+		.container-flex {
+			display : flex;
+			padding : 1% 2% 1% 2%;
+			
+		}
+		.contact{
+			width : 300px;
+			flex-shrink : 0;
+		}		
+		.photo{
+			width : 150px;
+			flex-shrink :0;
+			align-self : center;
+		}
+		.empty {
+			width : 500px;
+			margin : 10px;
+		}
+
+  </style>
+</head>
+<body>
+<div class = article-cv>
+	<section class = container-flex>
+		<div class = contact>
+			<h1>Irina Komarova</h1>
+			<h3>Contacts:</h3>
+			<ul>
+				<li> email:  <a href="email:toffee@ukr.net">toffee@ukr.net</a></li>
+				<li> tel/viber: <a href="tel:+380503557938">+380503557938</a></li>
+			</ul>
+		</div>
+		<div class=empty></div>
+		<div class=photo>
+			<img src="img1.jpg" alt="photo" width="150">
+		</div>
+	</section>
+	<section>
+		<h3>About me:</h3>
+		<p>IT professional with more than 10 years experience in the system and Web-site administration and user support. Looking for new opportunities to apply my skills, experience and knowledge</p>
+	</section>
+	<section>
+		<h3>Professional skills:</h3>
+		<ul>
+			<li>Experience in modern design and Web sites administration including content management with Joomla and WordPress.</li>
+			<li>HTML5, CSS3, JavaScript</li>
+			<li>Deployment and administration of the computer systems and servers based on Windows platform.</li>
+			<li>Attentiveness, responsibility, ability to learn fast.</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Code example:</h3>
+		<blockquote>
+				window.attachEvent("onload", function () {<br>
+					var name = document.getElementById("name");<br>
+					var surname = document.getElementById("surname");<br>
+					function check() {
+					document.getElementById('save').disabled = name.value && surname.value  ? false : "disabled";
+					}
+				}<br>
+
+				 form  method="get" action="" enctype="text/plain"<br>
+					 input id="name" type="text" placeholder="Name" value="" onkeyup="check();"<br>
+					 input id="surname" type="text" placeholder="Surname" value="" onkeyup="check();"<br>
+					 input id="save" type="submit" value="Save" disabled="disabled"<br>
+					 input id="subm" type="submit" value="Submit"<br>
+
+		</blockquote>
+	</section>
+	<section>
+		<h3>Experience:</h3>
+		<ul>
+			<li>Igor Sikorsky KPI, Center for International Education; IT-engineer, system and Web administrator</li>
+			<li>TV&Radio company «Golden Gate»; IT-engineer, system administrator</li>
+			<li>Institute of Ukrainian and Russian Relations; specialist I rank, IT-engineer</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Education:</h3>
+		<ul>
+			<li>Igor Sikorsky KPI, Faculty of Informatics and Computer Science; Master degree in Computer and intellectual systems and networks</li>
+			<li>CyberBionic Systematics, Frontend Developer courses</li>
+			<li>“12 project”, English Language course</li>
+		</ul>
+	</section>
+	<section>
+		<h3>English level</h3>
+		A2
+	</section>
+</div>
+</body>
+</html>
+
