@@ -1,17 +1,20 @@
- 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<!-- saved from url=(0041)https://toffeeffee.github.io/rsschool-cv/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head> 
   <title>Irina Komarova</title>
-  <style>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+  <style	>
 		section {
 			text-align : left;
-			padding : 0 2% 1% 2%;
+			padding : 0;
 			font-size : 22px;
+			margin: 0;
 		}
-		h1 {
-			color : blue;
+		h1,h3 {
+			//color : blue;
+			font-family: 'Roboto';
 		}
 		blockquote {
 			background-color : lightgrey;
@@ -26,12 +29,16 @@
 		}
 		.container-flex {
 			display : flex;
-			padding : 1% 2% 1% 2%;
+			padding : 2px 2% 0 2%;
 			
 		}
 		.contact{
 			width : 300px;
 			flex-shrink : 0;
+			padding :10px 50px;
+			margin : 1% 0 1% 0;
+			font-family: 'Roboto';
+			background-color : white;
 		}		
 		.photo{
 			width : 150px;
@@ -40,15 +47,28 @@
 		}
 		.empty {
 			width : 500px;
-			margin : 10px;
+			margin : 1% 2% 1% 0;
+			background-color : white;
 		}
+		.colum1{
+			width : 300px;
+			padding :10px 50px;
+			background-color : red;
+			margin : 0;
+			//font-family: 'Roboto';
+		}
+		.colum2{
+			width : 600px;
+			padding :20px 100px;
+			background-color : white;
+		} 
 
   </style>
 </head>
 <body>
-<div class = article-cv>
-	<section class = container-flex>
-		<div class = contact>
+<div class="article-cv">
+	<section class="container-flex">
+		<div class="contact">
 			<h1>Irina Komarova</h1>
 			<h3>Contacts:</h3>
 			<ul>
@@ -56,32 +76,41 @@
 				<li> tel/viber: <a href="tel:+380503557938">+380503557938</a></li>
 			</ul>
 		</div>
-		<div class=empty></div>
-		<div class=photo>
-			<img src="img1.jpg" alt="photo" width="150">
+		<div class="empty"></div>
+		<div class="photo">
+			<img src="./Irina Komarova_files/img1.jpg" alt="photo" width="150">
 		</div>
 	</section>
-	<section>
-		<h3>About me:</h3>
+	<section class="container-flex">
+		<div class="colum1"><h3>About me:</h3></div>
+		<div class= "colum2">
 		<p>IT professional with more than 10 years experience in the system and Web-site administration and user support. Looking for new opportunities to apply my skills, experience and knowledge</p>
+		</div>
 	</section>
-	<section>
+	<section class="container-flex">
+		<div class="colum1">
 		<h3>Professional skills:</h3>
+		</div>
+		<div class= "colum2">
 		<ul>
 			<li>Experience in modern design and Web sites administration including content management with Joomla and WordPress.</li>
 			<li>HTML5, CSS3, JavaScript</li>
 			<li>Deployment and administration of the computer systems and servers based on Windows platform.</li>
 			<li>Attentiveness, responsibility, ability to learn fast.</li>
 		</ul>
+		</div>
 	</section>
-	<section>
+	<section class="container-flex">
+		<div class="colum1">
 		<h3>Code example:</h3>
+		</div>
+		<div class= "colum2">
 		<blockquote>
 				window.attachEvent("onload", function () {<br>
 					var name = document.getElementById("name");<br>
 					var surname = document.getElementById("surname");<br>
 					function check() {
-					document.getElementById('save').disabled = name.value && surname.value  ? false : "disabled";
+					document.getElementById('save').disabled = name.value &amp;&amp; surname.value  ? false : "disabled";
 					}
 				}<br>
 
@@ -92,28 +121,42 @@
 					 input id="subm" type="submit" value="Submit"<br>
 
 		</blockquote>
+		</div>
 	</section>
-	<section>
+	<section class="container-flex">
+		<div class="colum1">
 		<h3>Experience:</h3>
+		</div>
+		<div class= "colum2">
 		<ul>
 			<li>Igor Sikorsky KPI, Center for International Education; IT-engineer, system and Web administrator</li>
-			<li>TV&Radio company «Golden Gate»; IT-engineer, system administrator</li>
+			<li>TV&amp;Radio company «Golden Gate»; IT-engineer, system administrator</li>
 			<li>Institute of Ukrainian and Russian Relations; specialist I rank, IT-engineer</li>
 		</ul>
+		</div>
 	</section>
-	<section>
+	<section  class="container-flex">
+	<div class="colum1">
 		<h3>Education:</h3>
+		</div>
+		<div class= "colum2">
 		<ul>
 			<li>Igor Sikorsky KPI, Faculty of Informatics and Computer Science; Master degree in Computer and intellectual systems and networks</li>
 			<li>CyberBionic Systematics, Frontend Developer courses</li>
 			<li>“12 project”, English Language course</li>
 		</ul>
+		</div>
 	</section>
-	<section>
+	<section class="container-flex">
+	<div class="colum1">
 		<h3>English level</h3>
+		</div>
+		<div class= "colum2">
 		A2
+		</div>
 	</section>
 </div>
-</body>
-</html>
 
+
+
+</body></html>
